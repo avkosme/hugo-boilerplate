@@ -1,0 +1,9 @@
+node_modules/
+/docker-compose.override.yml
+.env
+.cache/
+dist/
+public/
+_gen/
+assets/
+.ansible-vault-password.txt
