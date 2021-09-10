@@ -7,4 +7,4 @@ stop:
 restart:
 	docker-compose stop && docker-compose up -d
 build:
-	rm -rf public/ && docker run --rm -v `pwd`:`pwd` -w `pwd`/hugo klakegg/hugo:alpine
+	rm -rf public/ && docker run --rm -v `pwd`:`pwd` -w `pwd`/hugo klakegg/hugo:alpine --minify

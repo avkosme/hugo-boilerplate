@@ -14,3 +14,10 @@ $ echo theme = \"ananke\" >> config.toml
 $ docker run --rm -v `pwd`:`pwd` -w `pwd`/hugo klakegg/hugo:alpine new posts/my-first-post.md
 $ make start
 ```
+
+```
+$ docker build -t node:latest -f docker/nodejs/Dockerfile .
+$ mkdir `pwd`/hugo/themes/vue/lib
+$ docker run --rm -v `pwd`:`pwd` -w `pwd`/hugo/themes/vue/lib  node:latest npm init vite@latest form --template vue
+$ docker run --rm -v `pwd`:`pwd` -w `pwd`/hugo/themes/vue/lib/form  node:latest npm run build
+```
